@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Memorizing Translations</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div class="content">
+    <h1><a href="https://remember-the-word-8fd71.firebaseapp.com" target="_blank"><img src="../assets/images/icon.png" alt="Memorizing" width="50"></a></h1>
+    <nav class="navigation">
+      <ul>
+        <li class="auth"><span>Authentication</span></li>
+        <li class="logout"><span>Logout</span></li>
+        <li class="words-list"><span>My Words</span></li>
+        <li class="translate"><span>Translate</span></li>
+      </ul>
+      <div class="message">
+      </div>
+    </nav>
+    <div class="tab result" id="results">
+    </div>
+    <div class="tab auth-form" id="auth-form">
+      <h2>Sign Up</h2>
+      <form>
+        <div class="form-item">
+          <label for="login">Email</label>
+          <input type="email" autocomplete="off" id="login" />
+        </div>
+        <div class="form-item">
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+        </div>
+        <div class="btn-wrapper">
+          <button class="btn register">
+            Sign Up
+          </button>
+        </div>
+        <a href="#" class="switch">Switch to Login</a>
+      </form>
+    </div>
+    <div id="translate" class="tab translate-word">
+      <form>
+        <div class="row">
+          <div class="form-item col-50">
+            <label for="translate-text">Source text</label>
+            <input type="text" autocomplete="off" id="sorce-text" placeholder="Enter text to translate" />
+          </div>
+          <div class="form-item col-50">
+            <label for="translation">Translation</label>
+            <input type="text" autocomplete="off" id="translation" placeholder="Enter translation" />
+          </div>
+        </div>
+        <div class="form-item">
+          <label for="translation">Other variants</label>
+          <textarea id="other-variants" placeholder="Other variants separated by commas" /></textarea>
+        </div>
+        <div class="btn-wrapper">
+          <button type="submit" disabled class="btn translate-text-btn">
+            Save Translation
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../assets/js/jquery.js"></script>
+  <script src="extantion.js"></script>
+</body>
+</html>
